@@ -40,25 +40,36 @@ SHOW TABLES;
 
 ### Задание 2
 
-`Приведите ответ в свободной форме........`
-
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
+`Таблица с названиями таблиц базы Sakila и их первичными ключами`
 
 ```
-Поле для вставки кода...
-....
-....
-....
-....
+ +---------------+--------------+
+| TABLE_NAME    | COLUMN_NAME  |
++---------------+--------------+
+| actor         | actor_id     |
+| address       | address_id   |
+| category      | category_id  |
+| city          | city_id      |
+| country       | country_id   |
+| customer      | customer_id  |
+| film          | film_id      |
+| film_actor    | actor_id     |
+| film_actor    | film_id      |
+| film_category | film_id      |
+| film_category | category_id  |
+| film_text     | film_id      |
+| inventory     | inventory_id |
+| language      | language_id  |
+| payment       | payment_id   |
+| rental        | rental_id    |
+| staff         | staff_id     |
+| store         | store_id     |
++---------------+--------------+
+
 ```
 
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота](ссылка на скриншот)`
+<img width="1183" height="482" alt="Снимок экрана 2026-01-14 в 22 03 38" src="https://github.com/user-attachments/assets/1a684a11-9019-4795-a3b6-2dcf222d45d0" />
+
 
 ### Задание 4
 
