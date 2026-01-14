@@ -7,13 +7,16 @@
 
 <img width="919" height="549" alt="Снимок экрана 2026-01-13 в 11 53 01" src="https://github.com/user-attachments/assets/c3321486-4619-49e2-ad85-8477d38f5d23" />
 
+
 `Запрос на получение списка прав для пользователя sys_temp`
 
 <img width="1214" height="828" alt="Снимок экрана 2026-01-13 в 11 53 44" src="https://github.com/user-attachments/assets/c4530346-bc38-4191-9d0a-d0f1732b49fe" />
 
+
 `Получение всех таблиц базы данных`
 
 <img width="784" height="612" alt="Снимок экрана 2026-01-13 в 11 58 37" src="https://github.com/user-attachments/assets/5cb5dc9d-93c5-4c47-b828-a882124ca684" />
+
 
 `ER-диаграмма базы данных sakila`
 
