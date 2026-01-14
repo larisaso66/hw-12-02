@@ -6,7 +6,6 @@
 `Запрос на получение списка пользователей в базе данных`
 
 <img width="919" height="549" alt="Снимок экрана 2026-01-13 в 11 53 01" src="https://github.com/user-attachments/assets/c3321486-4619-49e2-ad85-8477d38f5d23" />
-` `
 
 `Запрос на получение списка прав для пользователя sys_temp`
 
@@ -22,6 +21,21 @@
 
 <img width="1677" height="915" alt="Снимок экрана 2026-01-14 в 21 50 40" src="https://github.com/user-attachments/assets/e539bf44-80c0-4c1a-a2c5-fdba0265487e" />
 
+`Список всех запросов`
+
+```
+CREATE USER 'sys_temp'@'%' IDENTIFIED BY 'temp_password';
+SELECT user, host FROM mysql.user;
+GRANT ALL PRIVILEGES ON *.* TO 'sys_temp'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+SHOW GRANTS FOR 'sys_temp'@'%';
+
+SOURCE /tmp/sakila-schema.sql;
+SOURCE /tmp/sakila-data.sql;
+
+USE sakila;
+SHOW TABLES;
+```
 ---
 
 ### Задание 2
