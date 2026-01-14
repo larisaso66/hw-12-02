@@ -71,24 +71,19 @@ SHOW TABLES;
 <img width="1183" height="482" alt="Снимок экрана 2026-01-14 в 22 03 38" src="https://github.com/user-attachments/assets/1a684a11-9019-4795-a3b6-2dcf222d45d0" />
 
 
-### Задание 4
+### Задание 3;
 
-`Приведите ответ в свободной форме........`
+`Отзыв у пользователя sys_temp прав на внесение, изменение и удаление данных из базы sakila. Выполнение запроса на получение списка прав для пользователя sys_temp`
 
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
+<img width="1189" height="477" alt="Снимок экрана 2026-01-14 в 22 56 35" src="https://github.com/user-attachments/assets/92fc0c1e-248a-4ced-ac18-0c5b36c86a1d" />
+
 
 ```
-Поле для вставки кода...
-....
-....
-....
-....
-```
+REVOKE ALL PRIVILEGES ON *.* FROM 'sys_temp'@'%';
 
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота](ссылка на скриншот)`
+GRANT SELECT, CREATE, DROP, ALTER, INDEX, REFERENCES, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE, CREATE VIEW, SHOW VIEW, CREATE ROUTINE, ALTER ROUTINE, EVENT, TRIGGER ON sakila.* TO 'sys_temp'@'%';
+
+FLUSH PRIVILEGES;
+
+SHOW GRANTS FOR 'sys_temp'@'%';
+```
